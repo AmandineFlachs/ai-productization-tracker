@@ -2,7 +2,7 @@
 
 A dated feed of research and product news from frontier AI labs, hand-tagged by category (research / productizing / mature product) and annotated with a "why it matters" note.
 
-**[Live demo](#)** &nbsp;·&nbsp; <!-- TODO: Vercel URL -->
+**[Live demo](https://ai-productization-tracker.vercel.app)**
 
 ![Screenshot](docs/screenshot.png) <!-- TODO: add screenshot -->
 
