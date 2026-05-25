@@ -4,3 +4,8 @@ node_modules/
 
 # Crawled raw markdown — regenerable from crawl_plan.json
 data/raw/
+
+# Personal share-format artifacts (kept local, not for the public repo)
+docs/carousel.html
+docs/carousel.pdf
+scripts/render-carousel.mjs
