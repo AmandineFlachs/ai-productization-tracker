@@ -1,22 +1,16 @@
 # AI Productization Tracker
 
-A dated feed of research and product news from frontier AI labs, hand-tagged by category (research / productizing / mature product) and annotated with a "why it matters" note.
+A small research app that translates LLM, agent and tooling updates from frontier AI labs into productization signals — hand-tagged by category (research / productizing / mature product) and annotated with a "why it matters" note.
 
-**[Live demo](https://ai-productization-tracker.vercel.app)**
+**[Live demo](https://ai-productization-tracker.vercel.app)** &nbsp;·&nbsp; [Watch as MP4](docs/architecture.mp4)
 
-![Screenshot](docs/screenshot.png) <!-- TODO: add screenshot -->
+![Pipeline animation](docs/architecture.svg)
 
 ## What it tracks
 
 12 labs — Anthropic, OpenAI, Google DeepMind, Meta FAIR, Mistral, DeepSeek, Cohere, AI2, Reka, Qwen, Black Forest Labs, Moonshot. ~70 items across model releases, papers, benchmarks, tooling, product launches, and safety announcements. Each entry includes a short summary and a POV "why it matters" annotation.
 
 ## Architecture
-
-```
-Firecrawl (free tier)   →  data/raw/*.md           crawl
-Claude Code (Max plan)  →  data/curated/news.json  extract
-Vite + React + Tailwind →  static site on Vercel   serve
-```
 
 **Marginal cost per refresh: $0.** Firecrawl's free tier covers the crawl (~46 credits used of the 1000/month budget). Extraction is run inside a Claude Code session covered by the Max subscription — no Anthropic API spend. Hosting is free on Vercel's Hobby tier.
 
