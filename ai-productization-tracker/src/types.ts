@@ -21,11 +21,6 @@ export interface NewsItem {
 }
 
 export interface NewsData {
-  _meta?: {
-    source: string;
-    generated_at: string;
-    knowledge_cutoff: string;
-    note?: string;
-  };
+  _meta?: Record<string, string>;
   items: NewsItem[];
 }

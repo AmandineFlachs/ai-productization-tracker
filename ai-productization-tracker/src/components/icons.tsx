@@ -1,19 +1,18 @@
-import type { ReactNode, SVGProps } from 'react';
+import type { ReactNode } from 'react';
 
 type IconProps = {
   size?: number;
   className?: string;
-  stroke?: number;
+  strokeWidth?: number;
   fill?: string;
-} & SVGProps<SVGSVGElement>;
+};
 
 function Icon({
   d,
   size = 14,
   className = '',
-  stroke = 1.5,
+  strokeWidth = 1.5,
   fill = 'none',
-  ...rest
 }: IconProps & { d: string | ReactNode }) {
   return (
     <svg
@@ -22,12 +21,11 @@ function Icon({
       viewBox="0 0 24 24"
       fill={fill}
       stroke="currentColor"
-      strokeWidth={stroke}
+      strokeWidth={strokeWidth}
       strokeLinecap="round"
       strokeLinejoin="round"
       className={className}
       aria-hidden="true"
-      {...rest}
     >
       {typeof d === 'string' ? <path d={d} /> : d}
     </svg>
