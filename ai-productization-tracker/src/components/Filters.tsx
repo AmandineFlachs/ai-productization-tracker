@@ -46,7 +46,7 @@ export function Filters(props: Props) {
 
   return (
     <div className="sticky top-0 z-30 backdrop-blur bg-paper/85 dark:bg-night/85 border-b border-rule dark:border-rule-d">
-      <div className="mx-auto max-w-[1280px] px-6 sm:px-8 py-4 flex flex-wrap items-center gap-3">
+      <div className="anim-filters mx-auto max-w-[1280px] px-6 sm:px-8 py-4 flex flex-wrap items-center gap-3">
         <div className="relative flex-1 min-w-[220px] max-w-[360px]">
           <IconSearch
             size={14}

@@ -17,7 +17,10 @@ export function NewsItemRow({
   onToggle: () => void;
 }) {
   return (
-    <li className="group relative border-b border-rule dark:border-rule-d hover:bg-paper-2/50 dark:hover:bg-night-2/40 transition-colors">
+    <li
+      className="anim-row group relative border-b border-rule dark:border-rule-d hover:bg-paper-2/50 dark:hover:bg-night-2/40 transition-colors"
+      style={{ ['--row-i' as string]: Math.min(index, 12) } as React.CSSProperties}
+    >
       <span className="absolute left-0 top-0 bottom-0 w-[2px] bg-signal opacity-0 group-hover:opacity-100 transition-opacity" />
 
       <div className="mx-auto max-w-[1240px] px-6 sm:px-10 py-10 sm:py-12 grid grid-cols-12 gap-x-8 gap-y-5">

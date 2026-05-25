@@ -28,10 +28,10 @@ export function Hero({
       </div>
 
       <div className="relative mx-auto max-w-[1240px] px-6 sm:px-10 pt-16 sm:pt-20 pb-14 sm:pb-16">
-        <h1 className="font-display font-bold text-[clamp(36px,5.2vw,64px)] leading-[0.98] tracking-[-0.025em] text-ink dark:text-bone">
+        <h1 className="anim-hero-title font-display font-bold text-[clamp(36px,5.2vw,64px)] leading-[0.98] tracking-[-0.025em] text-ink dark:text-bone">
           AI Productization Tracker
         </h1>
-        <p className="mt-6 max-w-[64ch] text-[15.5px] leading-[1.7] text-ink-2 dark:text-bone-2 text-pretty">
+        <p className="anim-hero-sub mt-6 max-w-[64ch] text-[15.5px] leading-[1.7] text-ink-2 dark:text-bone-2 text-pretty">
           Research and product news from AI labs, by date. {items.length} items tracked.
         </p>
       </div>
