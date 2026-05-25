@@ -1,0 +1,64 @@
+{
+  "entities": [
+    {
+      "id": "anthropic",
+      "name": "Anthropic",
+      "homepage": "https://www.anthropic.com"
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "homepage": "https://openai.com"
+    },
+    {
+      "id": "google_deepmind",
+      "name": "Google DeepMind",
+      "homepage": "https://deepmind.google"
+    },
+    {
+      "id": "meta_fair",
+      "name": "Meta FAIR",
+      "homepage": "https://ai.meta.com/"
+    },
+    {
+      "id": "mistral",
+      "name": "Mistral AI",
+      "homepage": "https://mistral.ai"
+    },
+    {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "homepage": "https://www.deepseek.com"
+    },
+    {
+      "id": "cohere",
+      "name": "Cohere",
+      "homepage": "https://cohere.com"
+    },
+    {
+      "id": "ai2",
+      "name": "Allen Institute for AI (AI2)",
+      "homepage": "https://allenai.org"
+    },
+    {
+      "id": "reka",
+      "name": "Reka AI",
+      "homepage": "https://reka.ai"
+    },
+    {
+      "id": "qwen",
+      "name": "Qwen (Alibaba)",
+      "homepage": "https://qwen.ai/"
+    },
+    {
+      "id": "black_forest_labs",
+      "name": "Black Forest Labs",
+      "homepage": "https://bfl.ai/"
+    },
+    {
+      "id": "moonshot",
+      "name": "Moonshot AI (Kimi)",
+      "homepage": "https://www.moonshot.ai/"
+    }
+  ]
+}

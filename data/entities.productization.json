@@ -1,0 +1,124 @@
+{
+  "entities": [
+    {
+      "id": "anthropic",
+      "name": "Anthropic",
+      "category": "llm_platform",
+      "stage": "productizing",
+      "stage_reason": "Claude API and Claude.ai are GA with paying enterprise customers, but the company still publishes frontier alignment and interpretability research at a high cadence and ships major new product surfaces (Claude Code, computer use, MCP) every few months.",
+      "productization_score": 3,
+      "last_notable_update": "Shipped the Claude 4 model family alongside Claude Code (terminal-native coding agent) and expanded computer-use capabilities, all wired to the same Messages API surface.",
+      "update_type": "product",
+      "why_it_matters": "Anthropic now sets a meaningful share of the price/performance frontier that any LLM-powered startup builds against, especially for agentic and coding workloads. Their model behavior choices (safety defaults, refusal patterns, tool-use ergonomics) propagate downstream into thousands of products. The pace of new modalities — coding agents, computer use, MCP — means operators have to re-evaluate build-vs-buy decisions every quarter, not every year. For B2B teams selling AI features, Anthropic is increasingly the default 'serious' option Procurement and Security will accept.",
+      "sources": ["https://www.anthropic.com", "https://www.anthropic.com/news"]
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "category": "llm_platform",
+      "stage": "mature_product",
+      "stage_reason": "ChatGPT is a global consumer brand with hundreds of millions of users, the API powers most of the LLM startup ecosystem, and most launches are now product-shaped (Operator, custom GPTs, Sora) rather than research artifacts.",
+      "productization_score": 3,
+      "last_notable_update": "Continued expansion of the GPT-5 generation and agent-shaped products (Operator, deep research), with growing emphasis on long-running browsing and computer-use agents rather than raw chat.",
+      "update_type": "product",
+      "why_it_matters": "OpenAI is still the default API most startups try first and the consumer surface most end-users mean when they say 'AI'. Pricing, rate limits, and policy decisions at OpenAI ripple instantly through the rest of the ecosystem. The shift from chat-shaped to agent-shaped products signals where the rest of the market is heading. For operators, OpenAI's product moves are useful as a leading indicator of which interaction patterns customers will start to expect within 6–12 months.",
+      "sources": ["https://openai.com", "https://openai.com/news/"]
+    },
+    {
+      "id": "google_deepmind",
+      "name": "Google DeepMind",
+      "category": "llm_platform",
+      "stage": "productizing",
+      "stage_reason": "Gemini is shipped into Google's consumer and Workspace surfaces at scale, but DeepMind also continues to publish heavy-research outputs (AlphaFold, AlphaProof, world models, robotics) and the open Gemma family — the research-to-product seam is still very visible.",
+      "productization_score": 3,
+      "last_notable_update": "Gemini 2 family rollout across Google products (Search AI Overviews, Workspace, Android) alongside continued releases of open Gemma weights and specialized models like Veo for video.",
+      "update_type": "product",
+      "why_it_matters": "DeepMind's distribution advantage is enormous — anything they ship reaches a billion-plus users via Search, Android, and Workspace, which sets the floor for what end-users assume 'free AI' looks like. Open Gemma weights are increasingly viable for teams that need on-device or private inference. Their research arm is the main credible counterweight to Anthropic/OpenAI on frontier capabilities. Operators selling into Google-shop enterprises will increasingly run into Gemini as the default 'already paid for' option in deals.",
+      "sources": ["https://deepmind.google", "https://deepmind.google/discover/blog/"]
+    },
+    {
+      "id": "meta_fair",
+      "name": "Meta FAIR",
+      "category": "llm_platform",
+      "stage": "productizing",
+      "stage_reason": "FAIR itself is a research org, but its Llama outputs anchor the entire open-weights ecosystem and are productized inside Meta AI across Instagram and WhatsApp; the research-to-product translation lag is visible but real.",
+      "productization_score": 2,
+      "last_notable_update": "Continued Llama family open-weight releases with growing parameter counts and multimodal variants, alongside research outputs on segmentation, video, and world models.",
+      "update_type": "research",
+      "why_it_matters": "Llama is the de facto open-weight baseline most startups, fine-tuners, and hosted-inference providers (Together, Fireworks, Groq) build on top of. For any operator considering self-hosting or fine-tuning, Llama is usually the starting point, which makes Meta's release cadence and license choices structurally important. FAIR's broader research output (vision, robotics, world models) hints at where multimodal capabilities will hit consumer apps next. The fact that this is essentially subsidized by Meta's ad business is a quiet but important market dynamic.",
+      "sources": ["https://ai.meta.com/research", "https://ai.meta.com/blog/"]
+    },
+    {
+      "id": "mistral",
+      "name": "Mistral AI",
+      "category": "llm_platform",
+      "stage": "productizing",
+      "stage_reason": "La Plateforme API and Le Chat are GA with paying customers, and Mistral ships a mix of open-weight and commercial models, but the company is still actively publishing model technical reports and iterating heavily on its product surface.",
+      "productization_score": 2,
+      "last_notable_update": "Expansion of the Mistral Large / Pixtral / Codestral lineup with both API and open-weight releases, and continued buildout of Le Chat as a consumer-facing assistant.",
+      "update_type": "product",
+      "why_it_matters": "Mistral is the most credible Europe-headquartered foundation-model option, which matters for any operator selling into EU enterprises with data-residency or sovereignty requirements. Their dual open-weight + commercial strategy means startups can prototype on open variants and graduate to the API. Codestral specifically is relevant for any team building coding tooling on a non-US base model. As the EU AI Act bites, Mistral's positioning becomes a useful hedge.",
+      "sources": ["https://mistral.ai", "https://mistral.ai/news"]
+    },
+    {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "category": "llm_platform",
+      "stage": "productizing",
+      "stage_reason": "DeepSeek-V3 and R1 are open-weight and served via a paid API at aggressive prices, with real developer adoption, but the company still ships primarily research-shaped releases (technical reports, model cards) rather than polished product surfaces.",
+      "productization_score": 2,
+      "last_notable_update": "Released DeepSeek-R1, an open-weight reasoning model approaching frontier-tier benchmark performance at a fraction of the inference cost, with a full technical report.",
+      "update_type": "research",
+      "why_it_matters": "DeepSeek's pricing collapsed the cost floor for serious reasoning capabilities, which directly compresses the unit economics any AI startup can charge for reasoning-heavy workflows. R1 also legitimized the 'open-weight reasoning model' category, which most labs are now scrambling to match. For operators, this means assumptions about how much LLM inference 'has to' cost are out of date — pricing models built six months ago likely need a rethink. It also raises the geopolitical question of whether non-Chinese deployments are operationally workable for your customers.",
+      "sources": ["https://www.deepseek.com", "https://api-docs.deepseek.com/updates"]
+    },
+    {
+      "id": "cohere",
+      "name": "Cohere",
+      "category": "llm_platform",
+      "stage": "productizing",
+      "stage_reason": "Cohere's Command and Embed models are GA via API with a clear enterprise sales motion, but the company is still actively shipping new model generations and Cohere For AI publishes open research at a meaningful pace (Aya multilingual models).",
+      "productization_score": 2,
+      "last_notable_update": "Continued Command R / R+ generation rollouts with RAG-optimized and tool-use variants, plus open Aya multilingual model releases from the Cohere For AI research lab.",
+      "update_type": "product",
+      "why_it_matters": "Cohere is the most enterprise-shaped of the independent foundation-model players — multi-cloud deployment, on-prem options, and strong RAG-focused tooling make them the realistic alternative to OpenAI/Anthropic for regulated industries. Their embeddings are a credible default for retrieval-heavy workloads. Cohere For AI's multilingual research (Aya) is meaningful for any operator with non-English markets. They're a useful sanity-check in any procurement conversation that's drifting toward single-vendor lock-in.",
+      "sources": ["https://cohere.com", "https://cohere.com/blog"]
+    },
+    {
+      "id": "ai2",
+      "name": "Allen Institute for AI (AI2)",
+      "category": "llm_platform",
+      "stage": "researchy",
+      "stage_reason": "AI2 is a non-profit research institute — it publishes papers and ships fully open models, training data, and recipes (OLMo, Tülu, Dolma) but does not run a commercial product or paid API.",
+      "productization_score": 1,
+      "last_notable_update": "Released the OLMo 2 family along with the complete training data, training code, and evaluation suite, advancing the 'fully open' frontier rather than just open-weights.",
+      "update_type": "research",
+      "why_it_matters": "AI2's fully-open releases are the closest thing the field has to a reproducible reference implementation — if you need to understand how a frontier-class model is actually trained, OLMo is the only public option. For operators building on open weights, AI2's recipes (Tülu post-training, Dolma data) are increasingly used as the baseline. They also serve as an independent voice in policy debates where the major labs have obvious commercial interests. Worth watching as a leading indicator of which open-source techniques will diffuse to other labs in 6–12 months.",
+      "sources": ["https://allenai.org", "https://allenai.org/blog"]
+    },
+    {
+      "id": "sakana",
+      "name": "Sakana AI",
+      "category": "llm_platform",
+      "stage": "researchy",
+      "stage_reason": "Sakana is a Tokyo-based research lab whose output is predominantly papers and prototype demos (AI Scientist, evolutionary model merging) rather than a hosted API or product; commercial offerings are early-stage and partnership-driven.",
+      "productization_score": 0,
+      "last_notable_update": "Published 'The AI Scientist' demonstrating end-to-end automated research paper generation, and continued work on evolutionary model merging techniques.",
+      "update_type": "research",
+      "why_it_matters": "Sakana represents a distinct bet — nature-inspired methods (evolution, model merging) rather than pure scale — which is worth tracking as a hedge against the scaling-only paradigm. Their AI Scientist work is one of the more credible public demos of agentic AI doing creative knowledge work end-to-end, which previews capabilities that will become productized elsewhere. For operators, Sakana is less relevant as a vendor and more as an early signal of what fully autonomous research/analysis agents might soon look like. Japan-headquartered also makes them a useful data point on non-US/non-China AI ecosystems.",
+      "sources": ["https://sakana.ai", "https://sakana.ai/blog/"]
+    },
+    {
+      "id": "reka",
+      "name": "Reka AI",
+      "category": "llm_platform",
+      "stage": "productizing",
+      "stage_reason": "Reka ships Core, Flash, and Edge multimodal models via API and through cloud partners (Snowflake, Oracle) with enterprise customers, but the company is still small-scale and continues to publish model technical reports.",
+      "productization_score": 1,
+      "last_notable_update": "Continued rollout of the Reka Core / Flash / Edge multimodal model family with strengthened video and document understanding, available via Reka's API and partner clouds.",
+      "update_type": "product",
+      "why_it_matters": "Reka is one of the few smaller labs that built a credible natively-multimodal model family (text + image + video + audio in one pass) rather than bolting modalities onto a text base — useful if your product workflow genuinely needs cross-modal reasoning. Their distribution through Snowflake/Oracle means they show up as the available option in some enterprise data stacks where the big-name APIs don't reach. For operators evaluating multimodal use cases (video understanding, document AI), Reka is worth at least benchmarking against the defaults.",
+      "sources": ["https://reka.ai", "https://reka.ai/news"]
+    }
+  ]
+}

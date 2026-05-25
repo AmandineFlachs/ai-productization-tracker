@@ -1,0 +1,6 @@
+node_modules/
+.env
+.env.local
+
+# Crawled raw markdown — regenerable from crawl_plan.json
+data/raw/

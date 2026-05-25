@@ -1,0 +1,86 @@
+[
+  {
+    "entity_id": "anthropic",
+    "homepage_url": "https://www.anthropic.com",
+    "secondary_url": "https://www.anthropic.com/news",
+    "homepage_mode": "single_page",
+    "secondary_mode": "depth_1"
+  },
+  {
+    "entity_id": "openai",
+    "homepage_url": "https://openai.com",
+    "secondary_url": "https://openai.com/news/",
+    "homepage_mode": "single_page",
+    "secondary_mode": "single_page"
+  },
+  {
+    "entity_id": "google_deepmind",
+    "homepage_url": "https://deepmind.google",
+    "secondary_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/",
+    "homepage_mode": "single_page",
+    "secondary_mode": "single_page"
+  },
+  {
+    "entity_id": "meta_fair",
+    "homepage_url": "https://ai.meta.com/",
+    "secondary_url": "https://ai.meta.com/blog/",
+    "homepage_mode": "single_page",
+    "secondary_mode": "single_page"
+  },
+  {
+    "entity_id": "mistral",
+    "homepage_url": "https://mistral.ai",
+    "secondary_url": "https://mistral.ai/news",
+    "homepage_mode": "single_page",
+    "secondary_mode": "single_page"
+  },
+  {
+    "entity_id": "deepseek",
+    "homepage_url": "https://www.deepseek.com",
+    "secondary_url": "https://api-docs.deepseek.com/updates",
+    "homepage_mode": "single_page",
+    "secondary_mode": "single_page"
+  },
+  {
+    "entity_id": "cohere",
+    "homepage_url": "https://cohere.com",
+    "secondary_url": "https://cohere.com/blog",
+    "homepage_mode": "single_page",
+    "secondary_mode": "single_page"
+  },
+  {
+    "entity_id": "ai2",
+    "homepage_url": "https://allenai.org",
+    "secondary_url": "https://allenai.org/news",
+    "homepage_mode": "single_page",
+    "secondary_mode": "single_page"
+  },
+  {
+    "entity_id": "reka",
+    "homepage_url": "https://reka.ai",
+    "secondary_url": "https://reka.ai/news",
+    "homepage_mode": "single_page",
+    "secondary_mode": "single_page"
+  },
+  {
+    "entity_id": "qwen",
+    "homepage_url": "https://qwen.ai/",
+    "secondary_url": "https://qwen.ai/blog",
+    "homepage_mode": "single_page",
+    "secondary_mode": "single_page"
+  },
+  {
+    "entity_id": "black_forest_labs",
+    "homepage_url": "https://bfl.ai/",
+    "secondary_url": "https://bfl.ai/blog",
+    "homepage_mode": "single_page",
+    "secondary_mode": "single_page"
+  },
+  {
+    "entity_id": "moonshot",
+    "homepage_url": "https://www.moonshot.ai/",
+    "secondary_url": "https://www.kimi.com/blog/",
+    "homepage_mode": "single_page",
+    "secondary_mode": "single_page"
+  }
+]

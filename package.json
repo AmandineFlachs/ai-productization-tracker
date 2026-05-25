@@ -1,0 +1,13 @@
+{
+  "name": "ai-productization-tracker-scripts",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Crawl + extraction scripts for the AI Productization Tracker. The React app lives under ai-productization-tracker/ with its own package.json.",
+  "scripts": {
+    "crawl": "node --env-file=.env scripts/crawl.mjs"
+  },
+  "dependencies": {
+    "@mendable/firecrawl-js": "^4.0.0"
+  }
+}

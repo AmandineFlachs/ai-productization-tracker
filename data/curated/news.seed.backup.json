@@ -1,0 +1,285 @@
+{
+  "_meta": {
+    "source": "hand-authored seed data, not from Firecrawl",
+    "generated_at": "2026-05-24",
+    "knowledge_cutoff": "2026-01",
+    "note": "Dates are approximate based on training-data recollection — verify before relying on them."
+  },
+  "items": [
+    {
+      "id": "openai_gpt5",
+      "title": "GPT-5 release",
+      "date": "2025-08-07",
+      "lab": "OpenAI",
+      "category": "mature_product",
+      "type": "model_release",
+      "summary": "OpenAI released GPT-5 across ChatGPT and the API, unifying the GPT and o-series reasoning models into a single product line with automatic routing.",
+      "why_it_matters": "Ends the bifurcated GPT/o-series lineup that confused API consumers about when to pay for reasoning. Unified routing simplifies integration but gives operators less explicit control over the cost-vs-quality tradeoff per call.",
+      "source_url": "https://openai.com/news/"
+    },
+    {
+      "id": "anthropic_claude4",
+      "title": "Claude 4 family (Sonnet 4, Opus 4)",
+      "date": "2025-05-22",
+      "lab": "Anthropic",
+      "category": "productizing",
+      "type": "model_release",
+      "summary": "Released Claude Sonnet 4 and Opus 4, the next generation of frontier models with improved reasoning, tool use, and longer effective context.",
+      "why_it_matters": "Raised the baseline for coding and agentic workloads. If you benchmarked your product on Claude 3.5 or 3.7 to make a build-vs-buy or pricing decision, those numbers are stale and may have flipped the call.",
+      "source_url": "https://www.anthropic.com/news"
+    },
+    {
+      "id": "anthropic_claude_code_ga",
+      "title": "Claude Code reaches general availability",
+      "date": "2025-05-22",
+      "lab": "Anthropic",
+      "category": "productizing",
+      "type": "product_launch",
+      "summary": "Claude Code, Anthropic's terminal-native coding agent, reached GA with support for hooks, slash commands, and IDE integrations.",
+      "why_it_matters": "Anthropic is now competing at the workflow layer with Cursor, Aider, and others — not just selling them the model underneath. Worth watching how this reshapes the IDE/agent vendor stack, especially for anyone building coding tools.",
+      "source_url": "https://www.anthropic.com/news"
+    },
+    {
+      "id": "meta_llama4",
+      "title": "Llama 4 family released",
+      "date": "2025-04-05",
+      "lab": "Meta FAIR",
+      "category": "productizing",
+      "type": "model_release",
+      "summary": "Meta released the Llama 4 family (Scout, Maverick, Behemoth) — its first natively multimodal open-weight models with mixture-of-experts architectures.",
+      "why_it_matters": "First major MoE open-weight release from Meta — inference economics now resemble a smaller dense model while quality tracks a larger one. If you self-host, recheck your hosting math against Llama 4 before renewing GPU contracts.",
+      "source_url": "https://ai.meta.com/blog/"
+    },
+    {
+      "id": "deepmind_gemma3",
+      "title": "Gemma 3 open-weight release",
+      "date": "2025-03-12",
+      "lab": "Google DeepMind",
+      "category": "productizing",
+      "type": "model_release",
+      "summary": "DeepMind released Gemma 3, an open-weight family from 1B to 27B parameters with multimodal and 128K-context variants.",
+      "why_it_matters": "Small open models keep getting good enough for production use cases that previously demanded a frontier API. Worth re-evaluating whether your AI features actually need a hosted call or could move to on-device / private inference.",
+      "source_url": "https://deepmind.google/discover/blog/"
+    },
+    {
+      "id": "reka_flash3",
+      "title": "Reka Flash 3 released",
+      "date": "2025-03-12",
+      "lab": "Reka AI",
+      "category": "productizing",
+      "type": "model_release",
+      "summary": "Reka released Flash 3, a 21B-parameter multimodal model with reasoning performance on par with OpenAI's o1-mini at a fraction of the inference cost.",
+      "why_it_matters": "Reasoning capability is generalizing beyond OpenAI/DeepSeek to smaller labs. Reka becomes a credible third option for cheap reasoning, especially when you also need multimodal inputs in the same call.",
+      "source_url": "https://reka.ai/news"
+    },
+    {
+      "id": "anthropic_constitutional_classifiers",
+      "title": "Constitutional Classifiers defend against jailbreaks",
+      "date": "2025-02-03",
+      "lab": "Anthropic",
+      "category": "research",
+      "type": "safety",
+      "summary": "Anthropic published research on constitutional classifiers that defend against universal jailbreaks while preserving model helpfulness on benign queries.",
+      "why_it_matters": "Matters if your product depends on Claude rejecting bad inputs without becoming annoying on good ones — the classic over-refusal tax has been a real problem for consumer-facing apps built on safety-tuned models.",
+      "source_url": "https://www.anthropic.com/news"
+    },
+    {
+      "id": "openai_deep_research",
+      "title": "Deep Research agent launch",
+      "date": "2025-02-02",
+      "lab": "OpenAI",
+      "category": "productizing",
+      "type": "product_launch",
+      "summary": "OpenAI shipped Deep Research, a multi-step web research agent that produces analyst-style reports from a single prompt.",
+      "why_it_matters": "Shifts the 'read sources + write a report' workflow from a human-driven multi-prompt loop to a single-prompt agent. If your product sells analyst memos, market scans, or competitive research, OpenAI now ships a built-in competitor inside ChatGPT.",
+      "source_url": "https://openai.com/news/"
+    },
+    {
+      "id": "openai_operator",
+      "title": "Operator browsing agent launch",
+      "date": "2025-01-23",
+      "lab": "OpenAI",
+      "category": "productizing",
+      "type": "product_launch",
+      "summary": "OpenAI launched Operator, an agent that can browse and operate websites on a user's behalf, initially available to Pro subscribers.",
+      "why_it_matters": "First serious consumer-facing browsing agent from a frontier lab. The 'give it a goal, watch it operate' pattern previews how a chunk of SaaS UI may get displaced — relevant for anyone whose product is essentially 'an interface that clicks things'.",
+      "source_url": "https://openai.com/news/"
+    },
+    {
+      "id": "deepseek_r1",
+      "title": "DeepSeek-R1 open-weight reasoning model",
+      "date": "2025-01-20",
+      "lab": "DeepSeek",
+      "category": "research",
+      "type": "model_release",
+      "summary": "DeepSeek released R1, an open-weight reasoning model competitive with o1 at a fraction of the price, along with a detailed technical report on its RL training recipe.",
+      "why_it_matters": "Collapsed the price floor for serious reasoning capabilities almost overnight. If you charge for reasoning-heavy AI features, your unit economics likely need a refresh. Also legitimized the open-weight reasoning category, which other labs are now racing to match.",
+      "source_url": "https://api-docs.deepseek.com/updates"
+    },
+    {
+      "id": "deepseek_v3",
+      "title": "DeepSeek-V3 (671B MoE)",
+      "date": "2024-12-26",
+      "lab": "DeepSeek",
+      "category": "productizing",
+      "type": "model_release",
+      "summary": "DeepSeek released V3, a 671B-parameter MoE model approaching GPT-4-class performance, reportedly trained for under $6M in compute.",
+      "why_it_matters": "Showed that frontier-class training is possible on much smaller compute budgets than previously assumed. Forces a rethink of moats based on capex alone — and a recheck of fundraising narratives that lean on 'training cost is the moat'.",
+      "source_url": "https://api-docs.deepseek.com/updates"
+    },
+    {
+      "id": "deepmind_veo2",
+      "title": "Veo 2 video generation model",
+      "date": "2024-12-16",
+      "lab": "Google DeepMind",
+      "category": "productizing",
+      "type": "model_release",
+      "summary": "DeepMind unveiled Veo 2, a state-of-the-art video generation model with improved realism and longer-clip capabilities.",
+      "why_it_matters": "Video generation crossed into 'useful for marketing/explainer content' territory. If your product touches video creation in any way, the bar for prompt-to-video quality just moved — and end-user expectations follow.",
+      "source_url": "https://deepmind.google/discover/blog/"
+    },
+    {
+      "id": "deepmind_gemini2",
+      "title": "Gemini 2.0 announced",
+      "date": "2024-12-11",
+      "lab": "Google DeepMind",
+      "category": "mature_product",
+      "type": "model_release",
+      "summary": "DeepMind announced Gemini 2.0 with native multimodality, agent capabilities (Project Mariner, Astra), and rollout across Google products.",
+      "why_it_matters": "Established Gemini as a peer of Claude/GPT, not a runner-up. For enterprises in the Google ecosystem, Gemini 2 is now the credible default — which affects deal economics if you're selling AI features into Google-shop accounts.",
+      "source_url": "https://deepmind.google/discover/blog/"
+    },
+    {
+      "id": "openai_sora_ga",
+      "title": "Sora launches to ChatGPT users",
+      "date": "2024-12-09",
+      "lab": "OpenAI",
+      "category": "productizing",
+      "type": "product_launch",
+      "summary": "OpenAI launched Sora to ChatGPT Plus and Pro users, bringing high-quality text-to-video generation to a paid consumer product.",
+      "why_it_matters": "Brought serious text-to-video to a paid consumer surface. If you sell video tooling, expect 'why can't I just type a prompt' from users in the next sales cycle.",
+      "source_url": "https://openai.com/news/"
+    },
+    {
+      "id": "meta_llama3_3",
+      "title": "Llama 3.3 70B released",
+      "date": "2024-12-06",
+      "lab": "Meta FAIR",
+      "category": "productizing",
+      "type": "model_release",
+      "summary": "Meta released Llama 3.3 70B, matching the performance of the much larger 405B model at a fraction of the inference cost.",
+      "why_it_matters": "Strong signal that post-training and distillation matter as much as raw scale. Changes the self-hosting calculus toward smaller, cheaper deployments — and updates the baseline you should be benchmarking against.",
+      "source_url": "https://ai.meta.com/blog/"
+    },
+    {
+      "id": "ai2_olmo2",
+      "title": "OLMo 2 fully open model release",
+      "date": "2024-11-26",
+      "lab": "Allen Institute for AI (AI2)",
+      "category": "research",
+      "type": "model_release",
+      "summary": "AI2 released OLMo 2 (7B and 13B), fully open models including training data, code, and recipes — closing the gap with closed-weight peers.",
+      "why_it_matters": "Fully open (data + code + weights) means OLMo is the reference if you need to deeply understand or modify model training. For research-shop startups and academic deployments, this is now the reproducible base.",
+      "source_url": "https://allenai.org/blog"
+    },
+    {
+      "id": "anthropic_mcp",
+      "title": "Model Context Protocol (MCP) open-sourced",
+      "date": "2024-11-25",
+      "lab": "Anthropic",
+      "category": "productizing",
+      "type": "tooling",
+      "summary": "Anthropic open-sourced the Model Context Protocol, a standard for connecting LLM applications to external tools and data sources.",
+      "why_it_matters": "MCP has cross-vendor adoption and is becoming the lingua franca for LLM tool/data integration. If you're building agentic apps, implementing MCP is increasingly cheaper than maintaining your own protocol — and gets you ecosystem compatibility for free.",
+      "source_url": "https://www.anthropic.com/news"
+    },
+    {
+      "id": "ai2_tulu3",
+      "title": "Tülu 3 open post-training recipe",
+      "date": "2024-11-21",
+      "lab": "Allen Institute for AI (AI2)",
+      "category": "research",
+      "type": "model_release",
+      "summary": "AI2 released Tülu 3, a fully open post-training recipe applied to Llama 3.1 that surpasses Llama 3.1 Instruct on key benchmarks.",
+      "why_it_matters": "If you fine-tune, Tülu 3 is now the baseline to compare your post-training against — and a reproducible reference for what a strong open recipe looks like end-to-end.",
+      "source_url": "https://allenai.org/blog"
+    },
+    {
+      "id": "cohere_aya_expanse",
+      "title": "Aya Expanse multilingual models",
+      "date": "2024-10-24",
+      "lab": "Cohere",
+      "category": "research",
+      "type": "model_release",
+      "summary": "Cohere For AI released Aya Expanse, an open-weight multilingual model family covering 23 languages with strong performance on non-English benchmarks.",
+      "why_it_matters": "Serious multilingual coverage matters for any product targeting non-English markets. Aya is currently the most credible open-weight option for strong non-English performance without going commercial.",
+      "source_url": "https://cohere.com/blog"
+    },
+    {
+      "id": "anthropic_computer_use",
+      "title": "Claude computer use (beta)",
+      "date": "2024-10-22",
+      "lab": "Anthropic",
+      "category": "productizing",
+      "type": "product_launch",
+      "summary": "Claude can now take screenshots and control a virtual computer, marking a first step toward general agentic capabilities in a frontier API.",
+      "why_it_matters": "First production API for general GUI control by an LLM. Clunky and expensive today, but the trajectory matters — many product workflows are essentially 'click buttons on someone's behalf', and that surface is now addressable.",
+      "source_url": "https://www.anthropic.com/news"
+    },
+    {
+      "id": "cohere_command_r_plus_refresh",
+      "title": "Command R+ refresh",
+      "date": "2024-08-30",
+      "lab": "Cohere",
+      "category": "productizing",
+      "type": "model_release",
+      "summary": "Cohere released an updated Command R+ with improved tool-use, RAG, and multilingual performance for enterprise applications.",
+      "why_it_matters": "Cohere keeps doubling down on RAG-optimized models for enterprise use. If you sell to regulated industries (finance, healthcare, gov), Cohere is increasingly the realistic alternative to OpenAI/Anthropic in procurement.",
+      "source_url": "https://cohere.com/blog"
+    },
+    {
+      "id": "sakana_ai_scientist",
+      "title": "'The AI Scientist' framework published",
+      "date": "2024-08-12",
+      "lab": "Sakana AI",
+      "category": "research",
+      "type": "paper",
+      "summary": "Sakana published 'The AI Scientist,' a framework demonstrating end-to-end automated ML research from idea to written paper, including automated peer review.",
+      "why_it_matters": "End-to-end automated research is still rough but the demo previews where knowledge-work tooling is going. If you sell analyst tools, research assistants, or report generators, this is a 1-2 year out signal worth tracking even if it doesn't affect your product today.",
+      "source_url": "https://sakana.ai/blog/"
+    },
+    {
+      "id": "deepmind_alphaproof",
+      "title": "AlphaProof reaches IMO silver-medal performance",
+      "date": "2024-07-25",
+      "lab": "Google DeepMind",
+      "category": "research",
+      "type": "benchmark",
+      "summary": "DeepMind's AlphaProof and AlphaGeometry 2 reached silver-medal performance on International Mathematical Olympiad problems, a first for AI systems.",
+      "why_it_matters": "First credible AI performance on competitive-math-level problems. Niche today, but a signal that formal reasoning is becoming tractable — relevant for any product depending on rigorous, verifiable logic chains (legal reasoning, formal verification, financial modeling).",
+      "source_url": "https://deepmind.google/discover/blog/"
+    },
+    {
+      "id": "mistral_large_2",
+      "title": "Mistral Large 2 released",
+      "date": "2024-07-24",
+      "lab": "Mistral AI",
+      "category": "productizing",
+      "type": "model_release",
+      "summary": "Mistral released Mistral Large 2 with 123B parameters and strong code, math, and multilingual performance under a research license.",
+      "why_it_matters": "European-headquartered frontier-tier option matters for any operator selling into EU enterprises with data-residency or sovereignty requirements. Mistral remains the cleanest hedge against pure US/China dependency in procurement.",
+      "source_url": "https://mistral.ai/news"
+    },
+    {
+      "id": "mistral_codestral",
+      "title": "Codestral code model released",
+      "date": "2024-05-29",
+      "lab": "Mistral AI",
+      "category": "productizing",
+      "type": "model_release",
+      "summary": "Mistral launched Codestral, a 22B-parameter open-weight code model trained on over 80 programming languages.",
+      "why_it_matters": "Useful baseline if you're building developer tooling on a non-US base model, or if you need to self-host code completion for IP or compliance reasons.",
+      "source_url": "https://mistral.ai/news"
+    }
+  ]
+}

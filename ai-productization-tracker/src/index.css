@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans:    "Geist", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Funnel Display", "Geist", ui-sans-serif, system-ui, sans-serif;
+  --font-mono:    "JetBrains Mono", ui-monospace, "SFMono-Regular", monospace;
+
+  /* Cool paper (light) */
+  --color-paper:        oklch(98% 0.003 250);
+  --color-paper-2:      oklch(95.5% 0.004 250);
+  --color-paper-3:      oklch(92.5% 0.005 250);
+  --color-ink:          oklch(16% 0.012 260);
+  --color-ink-2:        oklch(32% 0.010 260);
+  --color-ink-3:        oklch(50% 0.008 260);
+  --color-ink-4:        oklch(72% 0.006 260);
+  --color-rule:         oklch(89% 0.006 260);
+
+  /* Cool charcoal (dark) */
+  --color-night:        oklch(26% 0.010 260);
+  --color-night-2:      oklch(30% 0.012 260);
+  --color-night-3:      oklch(34% 0.012 260);
+  --color-bone:         oklch(98% 0.004 250);
+  --color-bone-2:       oklch(90% 0.008 250);
+  --color-bone-3:       oklch(80% 0.010 250);
+  --color-bone-4:       oklch(68% 0.012 250);
+  --color-rule-d:       oklch(40% 0.012 260);
+
+  /* Signal accent */
+  --color-signal:       oklch(58% 0.22 25);
+  --color-signal-soft:  oklch(58% 0.22 25 / 0.12);
+
+  /* Category hues */
+  --color-cat-research:        oklch(54% 0.16 260);
+  --color-cat-research-soft:   oklch(54% 0.16 260 / 0.10);
+  --color-cat-productizing:    oklch(58% 0.16 50);
+  --color-cat-productizing-soft:oklch(58% 0.16 50 / 0.10);
+  --color-cat-mature:          oklch(56% 0.13 165);
+  --color-cat-mature-soft:     oklch(56% 0.13 165 / 0.10);
+}
+
+@layer base {
+  html { font-family: var(--font-sans); background: var(--color-paper); }
+  html.dark { background: var(--color-night); }
+  .font-display { font-family: var(--font-display); }
+  .font-mono { font-family: var(--font-mono); }
+  .num { font-variant-numeric: tabular-nums; font-feature-settings: "tnum"; }
+  :focus { outline: none; }
+  ::selection { background: oklch(58% 0.22 25 / .22); color: var(--color-ink); }
+  html.dark ::selection { color: var(--color-bone); }
+}
+
+.grid-rule {
+  background-image: linear-gradient(to right, currentColor 1px, transparent 1px);
+  background-size: calc(100% / 12) 100%;
+  opacity: .04;
+}
+html.dark .grid-rule { opacity: .07; }

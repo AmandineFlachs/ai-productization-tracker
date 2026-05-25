@@ -1,0 +1,27 @@
+{
+  "categories": [
+    {
+      "id": "research",
+      "name": "Research",
+      "description": "Papers, technical reports, benchmark results, alignment/interpretability work — not yet productized."
+    },
+    {
+      "id": "productizing",
+      "name": "Productizing",
+      "description": "Early product launches, betas, new APIs/SDKs, model releases — transitioning from research to product."
+    },
+    {
+      "id": "mature_product",
+      "name": "Mature product",
+      "description": "GA releases, pricing/feature updates to established products, stable launches at scale."
+    }
+  ],
+  "types": [
+    { "id": "model_release", "name": "Model release" },
+    { "id": "paper", "name": "Paper" },
+    { "id": "benchmark", "name": "Benchmark" },
+    { "id": "tooling", "name": "Tooling" },
+    { "id": "product_launch", "name": "Product launch" },
+    { "id": "safety", "name": "Safety / alignment" }
+  ]
+}
