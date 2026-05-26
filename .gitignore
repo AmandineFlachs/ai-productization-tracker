@@ -9,3 +9,7 @@ data/raw/
 docs/carousel.html
 docs/carousel.pdf
 scripts/render-carousel.mjs
+
+# Transient render artifacts
+docs/.tmp-frames/
+docs/.verify-*

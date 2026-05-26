@@ -6,6 +6,7 @@
   "description": "Crawl + extraction scripts for the AI Productization Tracker. The React app lives under ai-productization-tracker/ with its own package.json.",
   "scripts": {
     "crawl": "node --env-file=.env scripts/crawl.mjs",
+    "embed-photo": "node scripts/embed-photo.mjs",
     "render-video": "node scripts/render-video.mjs"
   },
   "dependencies": {
